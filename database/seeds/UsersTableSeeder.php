@@ -21,6 +21,7 @@ class UsersTableSeeder extends Seeder
         $userRole = Role::where('name', 'user')->first();
 
         $admin = User::create([
+            'id' => 1,
             'name' => 'Amir Admin',
             'email' => 'amir_dautov95@mail.ru',
             'isActive' => 1,
@@ -28,6 +29,7 @@ class UsersTableSeeder extends Seeder
         ]);
 
         $user = User::create([
+            'id' => 2,
             'name' => 'Mark Smith User',
             'email' => 'mark@smith.com',
             'isActive' => 1,
@@ -35,6 +37,7 @@ class UsersTableSeeder extends Seeder
         ]);
 
         $admin2 = User::create([
+            'id' => 3,
             'name' => 'Elijah Hadasevich Admin',
             'email' => 'hadasevich.e@gmail.com',
             'isActive' => 1,
@@ -42,6 +45,7 @@ class UsersTableSeeder extends Seeder
         ]);
 
         $user2 = User::create([
+            'id' => 4,
             'name' => 'Arnold Wilson User',
             'email' => 'arnold@gmail.com',
             'isActive' => 1,
